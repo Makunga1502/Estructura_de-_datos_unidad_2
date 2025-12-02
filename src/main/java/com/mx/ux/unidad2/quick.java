@@ -32,7 +32,7 @@ class quicksort {
 
     // Ejemplo de uso
     public static void main(String[] args) {
-        int[] arr = {8, 3, 1, 7, 0, 10, 2};
+        int[] arr = {6, 1, 8, 3, 9, 4};
         quickSort(arr, 0, arr.length - 1);
         System.out.print("Arreglo ordenado: ");
         for (int num : arr) {
