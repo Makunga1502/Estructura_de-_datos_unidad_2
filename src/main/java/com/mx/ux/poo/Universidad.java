@@ -9,7 +9,7 @@ public class Universidad {
         alumno.inscripcionTaller();
         System.out.println("Mensualidad: "+ alumno.pagoMensualidad());
         System.out.println("Horas de estudio: "
-                + alumno.calcularHorasEstudio(1, 5));
+                + alumno.calcularHorasTrabajo(1, 5));
         System.out.println("***************************************");
 
         //crear un segundo alumno
@@ -18,7 +18,7 @@ public class Universidad {
         alumno2.pagoMensualidad();
         alumno2.inscripcionTaller();
         System.out.println("Horas de estudio: "
-                + alumno2.calcularHorasEstudio(1, 5));
+                + alumno2.calcularHorasTrabajo(1, 5));
 
         //Invocar al metodo sin crear un objeto de la clase
         Docente.asignarCalificacion();

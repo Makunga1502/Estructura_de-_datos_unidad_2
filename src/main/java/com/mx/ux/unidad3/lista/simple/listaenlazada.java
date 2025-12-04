@@ -19,30 +19,32 @@ public class listaenlazada {
         System.out.println("Insertando a inicio" + nuevoDato);
     }
 
-    public void insertarAlFinal (int nuevoDato){
+    public void insertarAlFinal (int nuevoDato) {
         Nodo nuevoNodo = new Nodo(nuevoDato);
 
         //si la lista esta vacia, el nuevo nodo es la cabeza
-        if(cabeza==null){
-            cabeza= nuevoNodo;
-            System.out.println("Insertando al final (Lista vacia)"+ nuevoDato);
+        if (cabeza == null) {
+            cabeza = nuevoNodo;
+            System.out.println("Insertando al final (Lista vacia)" + nuevoDato);
             return;
         }
 
         //si la lista no esta vacia, recorrer hasta el ultimo nodo
         Nodo actual = cabeza;
-        while(actual.siguiente !=null){
+        while (actual.siguiente != null) {
             actual = actual.siguiente;
         }
         //el ultimo nodo apuntando al nuevo nodo
         actual.siguiente = nuevoNodo;
-        System.out.println("Insertando al final"+nuevoDato);
+        System.out.println("Insertando al final" + nuevoDato);
+
+    }
 
     public void imprimirLista(){
         Nodo actual = cabeza;
         System.out.println("Lista simple");
 
-        while (actual ! = null){
+        while (actual != null){
             System.out.println(actual.dato + "->");
             actual = actual.siguiente;
             }
@@ -50,4 +52,4 @@ public class listaenlazada {
         }
 
     }
-}
+
